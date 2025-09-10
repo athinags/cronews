@@ -1,0 +1,250 @@
+@import "tailwindcss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --cosmic-purple: #7661A7;
+    --cosmic-blue: #0a2785;
+    --cosmic-cyan: #803fc6;
+    --cosmic-gold: #F59E0B;
+    --cosmic-dark: #0F172A;
+    --cosmic-light: #F8FAFC;
+    --cosmic-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --space-gradient: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #334155 100%);
+    --cosmic-glow: 0 0 20px rgba(107, 70, 193, 0.5);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
+    background: var(--space-gradient);
+    color: var(--cosmic-light);
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+.cosmic-footer {
+    padding: 40px;
+    text-align: center;
+    border-top: 1px solid rgba(107, 70, 193, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.footer-logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.footer-logo span {
+    font-family: 'Orbitron', monospace;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: linear-gradient(45deg, var(--cosmic-purple), var(--cosmic-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.footer-content p {
+    color: rgba(248, 250, 252, 0.6);
+    font-size: 0.9rem;
+}
+
+.cosmic-particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.cosmic-particles .particle {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    background: var(--cosmic-cyan);
+    border-radius: 50%;
+    animation: particleDrift 15s linear infinite;
+}
+
+.cosmic-particles .particle:nth-child(1) {
+    left: 20%;
+    animation-delay: 0s;
+}
+
+.cosmic-particles .particle:nth-child(2) {
+    left: 50%;
+    animation-delay: 5s;
+}
+
+.cosmic-particles .particle:nth-child(3) {
+    left: 80%;
+    animation-delay: 1s;
+}
+
+@keyframes particleDrift {
+    0% { 
+        transform: translateY(100px) translateX(0); 
+        opacity: 0; 
+    }
+    10% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { 
+        transform: translateY(-100px) translateX(50px); 
+        opacity: 0; 
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 60px;
+    }
+    
+    .about-content {
+        flex-direction: column;
+        gap: 60px;
+        text-align: center;
+    }
+    
+    .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .floating-nav {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        transform: none;
+        border-radius: 20px;
+    }
+    
+    .nav-links {
+        gap: 15px;
+    }
+    
+    .title-main {
+        font-size: 2.5rem;
+    }
+    
+    .title-sub {
+        font-size: 3rem;
+    }
+    
+    .hero-content {
+        padding: 0 20px;
+        margin-top: 120px;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .selector-wheel {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .login-container {
+        margin: 0 20px;
+        padding: 40px 30px;
+    }
+    
+    .machine-frame {
+        padding: 20px;
+    }
+    
+    .time-machine-section,
+    .about-section,
+    .login-section {
+        padding: 80px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .floating-nav {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 10px;
+    }
+    
+    .hero-content {
+        margin-top: 20px;
+    }
+    
+    .title-main {
+        font-size: 2rem;
+    }
+    
+    .title-sub {
+        font-size: 2.5rem;
+    }
+    
+    .selector-wheel {
+        grid-template-columns: 1fr;
+    }
+    
+    .era-option {
+        padding: 15px;
+    }
+    
+    .login-container {
+        padding: 30px 20px;
+    }
+    
+    .cosmic-camera {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .camera-lens {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .camera-body {
+        width: 180px;
+        height: 120px;
+    }
+}
+
+.scrollToSection {
+    scroll-behavior: smooth;
+}
