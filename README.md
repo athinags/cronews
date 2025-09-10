@@ -1,36 +1,184 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌌 Cronews - Viaje no tempo
 
-## Getting Started
+Bem-vindo ao **Cronews**, a plataforma definitiva para exploração temporal e documentação de eventos cósmicos significativos. Somos uma civilização avançada de fotógrafos cósmicos, exploradores do espaço-tempo que capturam os momentos mais extraordinários da história universal.
 
-First, run the development server:
-bloonstd6
+![Cronews Banner](https://via.placeholder.com/1200x400/000000/FFFFFF/?text=Cronews+-+Cosmic+Chronicle)
+
+## 🚀 Sobre o Projeto
+
+O **Cronews** é uma aplicação web que permite:
+
+- 🌟 **Viagem Temporal**: Navegar por diferentes eras cósmicas
+- 📸 **Documentação Cósmica**: Registrar eventos significativos do universo
+- 🔭 **Exploração Visual**: Visualize eventos através de imagens cósmicas únicas
+
+### Civilização Cronauta
+
+Nós, **Cronautas**, somos uma civilização avançada dedicada à preservação da história universal. Nossa missão é documentar e compartilhar os eventos mais significativos do cosmos, desde a formação das primeiras estrelas até o surgimento de civilizações em galáxias distantes.
+
+## 🛠 Tecnologias Utilizadas
+
+- **Next.js 14** - Framework React para produção
+- **React 18** - Biblioteca UI para interfaces interativas
+- **TypeScript** - Tipagem estática para maior confiabilidade
+- **Supabase** - Banco de dados em tempo real
+- **Tailwind CSS** - Framework CSS utilitário
+- **Auth Context** - Sistema de autenticação personalizado
+
+## 📋 Pré-requisitos
+
+Antes de começar, certifique-se de ter instalado:
+
+- **Node.js** (versão 18 ou superior)
+- **npm** ou **yarn** ou **pnpm**
+- **Git** para controle de versão
+
+## 🚀 Instalação e Configuração
+
+Siga estos passos para configurar o Cronews em sua máquina local:
+
+### 1. Clone o Repositório
+
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+# Clone o repositório
+git clone https://github.com/athinags/cronews.git
+
+# Acesse o diretório
+cd cronews
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Instale as Dependências
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+# Usando npm
+npm install
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# Ou usando yarn
+yarn install
 
-## Learn More
+# Ou usando pnpm
+pnpm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+### 3. Configure as Variáveis de Ambiente
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Crie um arquivo `.env.local` na raiz do projeto:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+(o conteúdo do arquivo será enviado via Teams)
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 4. Inicie o Servidor de Desenvolvimento
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+# Usando npm
+npm run dev
+
+# Ou usando yarn
+yarn dev
+
+# Ou usando pnpm
+pnpm dev
+```
+
+### 5. Acesse a Aplicação
+
+Abra seu navegador e acesse:
+```
+http://localhost:3000
+```
+
+## 👥 Tipos de Usuários
+
+### 🧑‍🚀 Cronautas
+- **Acesso completo** à plataforma
+- **Criar, editar e deletar** eventos cósmicos
+- **Moderar** conteúdo temporal
+- **Acessar** todas as eras cósmicas
+
+### 🌌 Viajantes
+- **Explorar** eventos cósmicos
+- **Visualizar** documentação temporal
+- **Navegar** por diferentes eras
+
+## 🎮 Como Usar
+
+### Primeiros Passos:
+
+1. **Registre-se** como Viajante ou solicite acesso Cronauta
+2. **Explore** a linha do tempo cósmica
+3. **Navegue** por diferentes eras usando a Máquina do Tempo
+4. **Documente** eventos cósmicos (apenas Cronautas)
+5. **Compartilhe** descobertas com a comunidade
+
+### Funcionalidades Principais:
+
+- **Máquina do Tempo**: Interface interativa para navegação temporal
+- **Galeria Cósmica**: Visualização de eventos documentados
+- **Painel Cronauta**: Página para edição e criação de eventos
+- **Busca Temporal**: Encontre eventos por era, época ou ano específico 
+
+## 📁 Estrutura do Projeto
+
+```
+cronews/
+├──public/                     # Arquivos estáticos
+├──src/
+    ├── app/                   # App Router do Next.js
+    │   ├── cadastrarEvento/   # Página de criação de eventos
+    │   ├── viajar/            # Viagem no tempo
+    │   ├── login/             # Autenticação
+    │   ├── sobre/             # Sobre a aplicação
+    │   ├── page.tsx           # Página inicial (Home)
+    │   └── layout.tsx         # Layout principal
+    ├── contexts/              # Contextos React
+    │   └── AuthContext.tsx    # Autenticação e usuário
+    ├── hooks/                 # Hooks customizados
+    │   └── useEvents.ts       # Gerenciamento de eventos
+    ├── lib/                   # Bibliotecas e configurações
+    │   └── supabase.ts        # Cliente Supabase
+    ├── types/                 # Definições TypeScript
+    └── components/            # Componentes fixos como a Header
+```
+
+## 🔧 Comandos Úteis
+
+```bash
+# Desenvolvimento
+npm run dev
+
+# Build para produção
+npm run build
+
+# Iniciar produção
+npm start
+
+# Verificar tipos TypeScript
+npm run type-check
+
+# Formatação de código
+npm run format
+```
+
+## 🌟 Características Técnicas
+
+- **Design Responsivo**: Funciona em todos os dispositivos
+- **Otimizado para SEO**: Melhor visibilidade cósmica
+- **Performance**: Carregamento rápido entre dimensões
+- **Segurança**: Autenticação robusta e proteção temporal
+- **Acessibilidade**: Navegável por todas as espécies conscientes
+
+## 🤝 Contribuição
+
+Interessado em contribuir para a documentação cósmica? Siga estos passos:
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/incrivel`)
+3. Commit suas mudanças (`git commit -m 'Adiciona evento cósmico incrível'`)
+4. Push para a branch (`git push origin feature/incrivel`)
+5. Abra um Pull Request
+
+---
+
+**Cronews** - Documentando o universo, um evento de cada vez. 🌌✨
+
+*"O tempo é a paisagem que percorremos, e cada evento é uma estrela no céu da história."* - Provérbio Cronauta
