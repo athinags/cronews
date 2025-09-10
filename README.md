@@ -2,7 +2,8 @@
 
 Bem-vindo ao **Cronews**, a plataforma definitiva para exploração temporal e documentação de eventos cósmicos significativos. Somos uma civilização avançada de fotógrafos cósmicos, exploradores do espaço-tempo que capturam os momentos mais extraordinários da história universal.
 
-![Cronews Banner](https://via.placeholder.com/1200x400/000000/FFFFFF/?text=Cronews+-+Cosmic+Chronicle)
+<img width="813" height="856" alt="cronautaRecap" src="https://github.com/user-attachments/assets/b97e31a8-7e3f-45fa-b66b-12ff00293539" />
+
 
 ## 🚀 Sobre o Projeto
 
