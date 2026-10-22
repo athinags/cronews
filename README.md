@@ -1,11 +1,15 @@
-# 🪐 Cronews - Viaje no tempo
+# ⏱️ Cronews - Viaje no tempo
 
 <div style= "display: flex;">
-Bem-vindo(a) ao **Cronews**, uma plataforma para exploração temporal e documentação de eventos cósmicos significativos. Somos uma civilização avançada de jornalistas cósmicos, exploradores do espaço-tempo que capturam os momentos mais extraordinários da história universal.
+Bem-vindo(a) ao Cronews, uma plataforma para exploração temporal e documentação de eventos cósmicos significativos. Somos uma civilização avançada de jornalistas cósmicos, exploradores do espaço-tempo que capturam os momentos mais extraordinários da história universal.
+<br>
+<br/>
 
-<img width="100" height="100" alt="Site Cronews" src="![alt text](image.png)" />
+
+
+<img width="1000" height="600" alt="image" src="https://github.com/user-attachments/assets/a75b75d5-788d-47a8-9411-e041315cb09e" />
+
 </div>
-
 
 
 ## 🚀 Sobre o Projeto
